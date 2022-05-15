@@ -1,0 +1,14 @@
+@import '../sidebars/account-side';
+
+.account{
+	top: 0;
+	position: absolute;
+	margin-left: $wdith_user_box;
+
+	@import 'elements/account/list';
+	@import 'elements/account/card-area';
+
+	@import 'elements/account/boxes/info-box';
+	@import 'elements/account/boxes/menu-box';
+	@import 'elements/account/boxes/filter-box';
+}

@@ -1,0 +1,35 @@
+@use "sass:math";
+
+.menu-top{
+	top: 0;
+	width: 100%;
+	position: fixed;
+	z-index: 99999999;
+	height: $header_size;
+	background: $firstColor;
+	@include drop-shadow-sm;
+	margin-top: $header_size;
+	line-height: $header_size;
+
+	.menu-content{
+		display: flex;
+		margin: 0 20vh;
+		position: absolute;
+		align-items: center;
+		width: $width_screen;
+		justify-content: center;
+
+		.item{
+			float: left;
+			cursor: pointer;
+			width: $menu_size;
+			text-align: center;
+			height: $header_size;
+			line-height: $header_size;
+			border-color: transparent;
+			@include hover;
+		}
+	
+		.actived{ background: $secondColor; }
+	}
+}
